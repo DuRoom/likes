@@ -1,0 +1,54 @@
+{
+    "name": "duroom/likes",
+    "description": "Allow users to like posts.",
+    "type": "duroom-extension",
+    "keywords": [
+        "discussion"
+    ],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/DuRoom/core/issues",
+        "source": "https://github.com/DuRoom/likes",
+        "forum": "https://discuss-duroom.js.org"
+    },
+    "homepage": "https://duroom.js.org",
+    "require": {
+        "duroom/core": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "DuRoom\\Likes\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "duroom-extension": {
+            "title": "Likes",
+            "category": "feature",
+            "icon": {
+                "name": "far fa-thumbs-up",
+                "backgroundColor": "#3A649D",
+                "color": "#fff"
+            }
+        },
+        "duroom-cli": {
+            "modules": {
+                "admin": true,
+                "forum": true,
+                "js": true,
+                "jsCommon": false,
+                "css": true,
+                "gitConf": true,
+                "githubActions": true,
+                "prettier": true,
+                "typescript": false,
+                "bundlewatch": false,
+                "backendTesting": false,
+                "editorConfig": true,
+                "styleci": true
+            }
+        }
+    }
+}
